@@ -417,13 +417,21 @@ optgroup {
  */
 
 table {
+  margin: 1em 0;
   border-spacing: 0;
   border-collapse: collapse;
 }
 
 td,
 th {
-  padding: 0;
+  padding: 2px 5px;
+}
+
+th {
+  font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica;
+  background-image: linear-gradient(#2e7bcf, #275da1);
+  font-weight: bolder;
+  color: white;
 }
 
 /* LAYOUT STYLES */
@@ -456,7 +464,7 @@ header {
 }
 
 header h1 {
-  width: 540px;
+  width: 800px;
   margin-top: 0;
   margin-bottom: 0.2em;
   font-size: 72px;
@@ -467,7 +475,7 @@ header h1 {
 }
 
 header h2 {
-  width: 540px;
+  width: 800px;
   margin-top: 0;
   margin-bottom: 0;
   font-size: 26px;
@@ -479,7 +487,7 @@ header h2 {
 
 .inner {
   position: relative;
-  width: 940px;
+  width: 1200px;
   margin: 0 auto;
 }
 
@@ -490,7 +498,7 @@ header h2 {
 
 #main-content {
   float: left;
-  width: 690px;
+  width: 1000px;
 }
 
 #main-content img {

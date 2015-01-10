@@ -1,13 +1,18 @@
-# Chat Demo - Stage 1
-
-## Setting up the project
+---
+title: Chat Demo - Stage 1
+layout: post
+categories: chat_app
+tags: node.js javascript websockets socket.io bower yeoman npm
+---
+# Setting up the project
 
 For the first stage of the project, I'm just creating a bare-bones chat app using [socket.io](http://socket.io)
 and [node.js](http://nodejs.org).
 
 The app was developed on a machine running Ubuntu 14.04.
 
-### Scaffolding
+
+## Scaffolding
 To set up the basic folder structure, I used the Yeoman node-generator npm package.
 
     mkdir stage_1
@@ -38,7 +43,7 @@ template will be a better choice in future.
 I normally like to structure my node apps as follows
 
 folder       | types of files
------------- | --------------
+:------------- | :--------------
 node_modules | packages installed from npm
 lib          | local node modules specific to this project
 public       | static files intended for the client

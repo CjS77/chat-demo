@@ -1,0 +1,23 @@
+{% include header.html  %}
+
+<body>
+<header>
+    <div class="inner">
+        <h1>Chat-demo</h1>
+        <h2>A demo web app using Websockets 1.+, node.js and various other technologies as I go</h2>
+        <a href="https://github.com/CjS77/chat-demo" class="button"><small>View project on</small> GitHub</a>
+    </div>
+</header>
+
+<div id="content-wrapper">
+    <div class="inner clearfix">
+        <section id="main-content">
+            {{ content }}
+        </section>
+        {% include sidebar.html %}
+    </div>
+</div>
+
+
+
+</body>

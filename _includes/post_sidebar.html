@@ -1,0 +1,21 @@
+<aside id="sidebar">
+    <a href="https://github.com/CjS77/chat-demo/zipball/master" class="button">
+        <small>Download</small>
+        .zip file
+    </a>
+    <a href="https://github.com/CjS77/chat-demo/tarball/master" class="button">
+        <small>Download</small>
+        .tar.gz file
+    </a>
+
+    <h2>Related posts</h2>
+    <ul>
+    {% for post in site.relatedposts %}
+    <li>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+    </li>
+    {% endfor %}
+    </ul>
+    <p class="repo-owner"><a href="https://github.com/CjS77/chat-demo">Chat Demo</a> is maintained by <a href="https://github.com/CjS77">CjS77</a>.</p>
+
+</aside>
