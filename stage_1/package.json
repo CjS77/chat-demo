@@ -1,0 +1,48 @@
+{
+  "name": "chat-demo",
+  "version": "0.0.0",
+  "main": "lib/chat-demo.js",
+  "description": "The best module ever.",
+  "homepage": "user/repo",
+  "bugs": "user/repo/issues",
+  "author": {
+    "name": "",
+    "email": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "user/repo"
+  },
+  "license": "MIT",
+  "files": [
+    "lib"
+  ],
+  "keywords": [
+    "chat-demo",
+    ""
+  ],
+  "devDependencies": {
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-nodeunit": "^0.3.3",
+    "grunt-contrib-watch": "^0.6.1",
+    "load-grunt-tasks": "^0.4.0",
+    "time-grunt": "^0.3.1",
+    "grunt-mocha-cli": "^1.9.0",
+    "jshint-stylish": "^0.2.0"
+  },
+  "scripts": {
+    "test": "grunt",
+    "start": "node lib/chat.js"
+  },
+  "bin": {
+    "chat-demo": "cli.js"
+  },
+  "preferGlobal": "true",
+  "dependencies": {
+    "express": "^4.10.7",
+    "jade": "^1.8.2",
+    "serve-static": "^1.8.0",
+    "socket.io": "^1.2.1",
+    "sprintf-js": "^1.0.2"
+  }
+}
