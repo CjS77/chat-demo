@@ -3,6 +3,7 @@ title: Chat Demo - Stage 1
 layout: post
 categories: chat_app
 tags: node.js javascript websockets socket.io bower yeoman npm
+excerpt: <p>Before we start coding, set up the layout of the project.
 ---
 # Setting up the project
 
@@ -10,7 +11,6 @@ For the first stage of the project, I'm just creating a bare-bones chat app usin
 and [node.js](http://nodejs.org).
 
 The app was developed on a machine running Ubuntu 14.04.
-
 
 ## Scaffolding
 To set up the basic folder structure, I used the Yeoman node-generator npm package.

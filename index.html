@@ -4,24 +4,23 @@ title: Realtime Chat App Demo
 ---
 
 
-<div class="home">
 
   <h1 class="page-heading">Articles</h1>
 
-  <ul class="post-list">
+  <div class="list-group">
     {% for post in site.posts %}
-    <li>
-      <h2>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </h2>
-      <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-      {{ post.excerpt }}
-    </li>
+    <a class="list-group-item" href="{{ post.url | prepend: site.baseurl }}">
+      <h4 class="list-group-item-heading">
+        {{ post.title }}
+      </h4>
+      <p><span class="initialism">{{ post.date | date: "%b %-d, %Y" }}</span>
+        {{ post.excerpt }}
+      </p>
+    </a>
     {% endfor %}
-  </ul>
+  </div>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
-</div>
+
 
 
