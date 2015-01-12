@@ -5,6 +5,9 @@ categories: chat_app
 tags: node.js javascript websockets socket.io bower yeoman npm
 excerpt: <p>Before we start coding, set up the layout of the project.
 ---
+
+{% include defaults.md %}
+
 # Setting up the project
 
 For the first stage of the project, I'm just creating a bare-bones chat app using [socket.io](http://socket.io)
@@ -42,7 +45,8 @@ template will be a better choice in future.
 
 I normally like to structure my node apps as follows
 
-folder       | types of files
+{: table}
+Folder       | Types of files
 :------------- | :--------------
 node_modules | packages installed from npm
 lib          | local node modules specific to this project
