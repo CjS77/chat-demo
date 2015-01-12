@@ -1,0 +1,23 @@
+---
+# Front matter
+---
+
+//Imports
+@import "mixins";
+@import "variables";
+@import "bootswatch";
+@import "notes";
+
+.highlight {
+  .pre {
+    position: relative;
+  }
+
+  .caption {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding-right: 3px;
+
+  }
+}

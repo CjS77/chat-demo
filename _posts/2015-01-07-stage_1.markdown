@@ -68,16 +68,19 @@ folder like I want you can create a `.bowerrc` file and put the following in it:
 
 Now the bower commands above will install the relevant libraries in the `public` folder.
 
-**Note:** This is not what I probably want to do long term.
+{:note: .note}
+
+<div class="note" markdown='1'>
+##### This is not what I probably want to do long term.
 
 * The `public` folder will be served statically to browsers. There's a lot of other stuff in the `public` folder
   that I don't necessarily want people to see.
 * The downloaded libraries aren't always minified. It would be nice to serve minified and/or aggregated .js files
-  to browsers
+  to browsers.
 
 I think a better strategy would be to have the modules be put in the default `bower_modules` directory, and then have
   a Grunt task collate and minify all the exported modules (and dependencies) and copy the result to `public/js/lib`.
   But let's leave that for another time.
-
+</div>
 
 
