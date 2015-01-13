@@ -2,11 +2,14 @@
 /* globals $, io */
 'use strict';
 
+
 //shortcut for document.onready = function()
 $(function() {
+    var nick = "user";
     var socket = io.connect('localhost:33001/')
     .on('connect', function() {
         $('#status').html("<b>Connected</b>").removeClass().addClass('connected');
+        socket.emit('userJoined',nick);
     })
     .on('disconnect', function(socket) {
         $('#status').html("<b>Disconnected</b>").removeClass().addClass('disconnected');
@@ -25,8 +28,25 @@ $(function() {
         el.addClass("message "+payload.nick);
     });
 
-    $('#send').click(function() {
+    function sendMessage() {
+        if (!socket.connected) return;
         var msg = $('#message').val();
-        socket.emit('userMessage', {nick:"user", msg: msg});
+        socket.emit('userMessage', {nick:nick, msg: msg});
+    }
+
+    $('#send').click(function() {
+        sendMessage()
     });
+
+    $('#btnnick').click(function() {
+        var newNick = $('#nick').val();
+        socket.emit('setNick', {old: nick, new: newNick});
+        nick = newNick;
+    })
+
+    $('#message').keydown(function(event) {
+        if (event.which === 13) { //ENTER
+            sendMessage();
+        }
+    })
 });
